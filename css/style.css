@@ -1,0 +1,94 @@
+
+#test-content { 
+  position: relative;
+  height: 100%;
+  overflow: auto; 
+}
+
+.sidenav-list {
+  /*background:rgba(230, 230, 230, .5);*/
+  border-radius: 3px;
+  border-left: 1px solid rgba(0, 0, 0, .3);
+  border-bottom: 1px solid rgba(0, 0, 0, .3);
+  padding: 15px;
+}
+
+.sidenav-list {
+  top: 5%;
+}
+
+.sidenav .nav-header {
+  color: #3399FF;
+  font-weight: bold;
+}
+
+/* all links */
+.sidenav .nav>li>a {
+    color: rgba(51, 153, 255, .5);
+    padding: 4px 20px;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+/* nested links */
+.sidenav .nav .nav>li>a {
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 30px;
+    font-size: 12px;
+}
+
+/* active & hover links */
+.sidenav .nav>.active>a, 
+.sidenav .nav>li>a:hover, 
+.sidenav .nav>li>a:focus {
+    color: #3399FF;                 
+    text-decoration: none;
+    background: transparent;
+}
+
+.sidenav .nav>.active>a:before, 
+.sidenav .nav>li>a:hover:before, 
+.sidenav .nav>li>a:focus:before {
+  content : "";
+  position: absolute;
+  left    : 20px;
+  bottom  : 0;
+  height  : 1px;
+  width   : 85px;  /* or 100px */
+  border-bottom:1px solid rgba(51, 153, 255, .8);
+}
+
+/* all active links */
+.sidenav .nav>.active>a, 
+.sidenav .nav>.active:hover>a,
+.sidenav .nav>.active:focus>a {
+    font-weight: 700;
+}
+/* nested active links */
+.sidenav .nav .nav>.active>a, 
+.sidenav .nav .nav>.active:hover>a,
+.sidenav .nav .nav>.active:focus>a {
+    font-weight: 500;
+}
+
+.sidenav .nav .nav>.active>a:before, 
+.sidenav .nav .nav>.active:hover>a:before,
+.sidenav .nav .nav>.active:focus>a:before  {
+  content : "";
+  position: absolute;
+  left    : 30px;
+  bottom  : 0;
+  height  : 1px;
+  width   : 50px;  /* or 100px */
+  border-bottom:1px solid rgba(51, 153, 255, .8);
+}
+
+/* hide inactive nested list */
+#cnavbar .nav ul.nav {
+  display: none;           
+}
+/* show active nested list */
+#cnavbar .nav>.active>ul.nav {
+  display: block;           
+}
