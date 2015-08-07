@@ -5,6 +5,15 @@
   overflow: auto; 
 }
 
+#cnavbar .to-top {
+  color: rgba(51, 153, 255, 1);
+  padding: 4px 20px;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+
+
 .sidenav-list {
   /*background:rgba(230, 230, 230, .5);*/
   border-radius: 3px;
